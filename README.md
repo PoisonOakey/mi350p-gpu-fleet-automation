@@ -1,4 +1,4 @@
-# GPU Fleet Provisioning Automation
+# AMD Instinct™ MI300 Series GPU Fleet Provisioning Automation
 
 > Portfolio project: A highly concurrent, config-driven fleet installer for managing drivers and runtimes across 20+ enterprise bare-metal AMD MI300 series GPU servers.
 > **No proprietary code is included.** This documents the architecture, skills, and outcomes.
