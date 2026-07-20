@@ -25,6 +25,15 @@ A config-driven fleet installer that deploys and manages software stacks across 
 
 ---
 
+## Installation Dependencies
+
+Compenents must be installed in order - later stages depend on earlier ones.
+
+>[!WARNING]
+>Reinstalling Stage 1 wipes Stage 3-4 - must reinstall them after.
+
+---
+
 ## What I Did
 
 | Area | Detail |
