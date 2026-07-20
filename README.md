@@ -1,6 +1,6 @@
 # AMD Instinct™ MI350P DCGPU Fleet Provisioning Automation
 
-> A case study on the highly concurrent, config-driven fleet installer I built for managing drivers and runtimes across 25+ enterprise bare-metal AMD Instinct™ MI350P Data Center GPU servers.
+> A case study on the highly concurrent, config-driven fleet installer I built for managing drivers and runtimes across 25+ enterprise bare-metal AMD Instinct™ MI350P Data Center GPU servers in Penang & Austin.
 > **No proprietary code is included.** This documents the architecture, skills, and outcomes.
 
 ---
