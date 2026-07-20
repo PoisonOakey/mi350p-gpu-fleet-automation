@@ -1,6 +1,6 @@
 # AMD Instinct™ MI300 Series GPU Fleet Provisioning Automation
 
-> Portfolio project: A highly concurrent, config-driven fleet installer for managing drivers and runtimes across 20+ enterprise bare-metal AMD MI300 series GPU servers.
+> A case study on the highly concurrent, config-driven fleet installer I built for managing drivers and runtimes across 20+ enterprise bare-metal AMD MI300 series GPU servers.
 > **No proprietary code is included.** This documents the architecture, skills, and outcomes.
 
 ---
@@ -11,7 +11,8 @@ A config-driven fleet installer that deploys and manages software stacks across 
 
 **One command** deploys the full stack (GPU runtime, kernel drivers, diagnostics, benchmarks) to the entire fleet with automatic reboot handling.
 
-> **Why custom, not Ansible?** Bare-metal hosts, no agents, no cloud APIs — SSH was the only access. Purpose-built for fast version rotations where the team needed a single command, not a playbook.
+>  [!IMPORTANT]
+>  **Why custom, not Ansible?** Bare-metal hosts, no agents, no cloud APIs — SSH was the only access. Purpose-built for fast version rotations where the team needed a single command, not a playbook.
 
 ---
 
@@ -94,5 +95,7 @@ project/
 | Version update process | Edit Python code | Edit YAML config |
 | Documentation | None | Architecture guide, workflow guide, changelog |
 
-Given more time: idempotent installs (skip if already at target version), dry-run mode, and retry logic for transient failures.
+> [!NOTE]
+> Given more time: idempotent installs (skip if already at target version), dry-run mode, and retry logic for transient failures.
 
+---
