@@ -21,7 +21,7 @@ A cocurrent, config-driven fleet installer that deploys and manages software sta
 - 25+ GPU servers needed identical software stacks (runtime, drivers, firmware, diagnostic tools)
 - BKC (Best Known Configuration) versions changed every 1-2 weeks
 - Manual installation = 1-2 hours per host, error-prone, inconsistent
-- Driver installs require kernel module unload -> reboot -> reinstall -> reboot — across every host
+- Driver installs require kernel module ```unload -> reboot -> reinstall -> reboot``` — across every host
 
 ---
 
