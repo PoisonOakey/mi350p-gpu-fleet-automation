@@ -113,6 +113,12 @@ project/
 | Documentation | None | Architecture guide, workflow guide, changelog |
 
 > [!NOTE]
-> Given more time: idempotent installs (skip if already at target version), dry-run mode, and retry logic for transient failures.
+> ### Additional features implemented:
+> - **Idempotent installs** — checks current version on each host before installing, skips if already at target (`--force` to override)
+> - **BKC Gatekeeper** — side-by-side Expected vs Actual version comparison table for fleet compliance auditing
+> - **Improved logging** — ✅/❌ pass/fail markers per step with summary block at end of each host run
+>   
+> _**Still planned**_: dry-run mode, retry logic for transient failures, full suite idempotency.
+
 
 ---
