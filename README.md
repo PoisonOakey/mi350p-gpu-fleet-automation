@@ -118,6 +118,6 @@ project/
 > - **BKC Gatekeeper** — side-by-side Expected vs Actual version comparison table for fleet compliance auditing
 > - **Improved logging** — ✅/❌ pass/fail markers per step with summary block at end of each host run
 >
-> Still planned: dry-run mode, retry logic for transient failures, full suite idempotency.
+> _**Still planned**_: dry-run mode, retry logic for transient failures, full suite idempotency.
 
 ---
