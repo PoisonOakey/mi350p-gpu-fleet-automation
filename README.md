@@ -58,14 +58,20 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ## :house_with_garden: Architecture
 
-```text
-┌───────────┐    ┌────────────────┐    ┌─────────────────┐
-│ CLI args  │───>│ Load configs   │───>│ Thread pool     │
-│ --tasks   │    │ YAML -> dict   │    │ 1 thread/host   │
-│ --config  │    │                │    │                 │
-│ --hosts   │    │ versions.yml   │    │ SSH -> run bash │
-└───────────┘    │ hosts.yml      │    │ per host        │
-                 └────────────────┘    └─────────────────┘
+```mermaid
+graph LR
+    A["💻 Operator<br/>CLI args"] --> B["📄 Config Loader<br/>YAML → dict"]
+    B --> C["⚙️ Translation Layer<br/>Versions → URLs"]
+    C --> D["🔀 Thread Pool<br/>1 thread per host"]
+    D --> E["Host 1"]
+    D --> F["Host 2"]
+    D --> G["Host ..."]
+    D --> H["Host 20+"]
+    style A fill:#3498db,color:#fff
+    style B fill:#2ecc71,color:#fff
+    style C fill:#9b59b6,color:#fff
+    style D fill:#e67e22,color:#fff
+
 ```
 
 | Layer | Role | Description |
