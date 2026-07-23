@@ -59,6 +59,7 @@ Compenents must be installed in order - later stages depend on earlier ones.
 ## :house_with_garden: Architecture
 
 ```mermaid
+%%{init: {'themeVariables': { 'background': '#ffffff'}}}%%
 graph LR
     A["💻 Operator<br/>CLI args"] --> B["📄 Config Loader<br/>YAML → dict"]
     B --> C["⚙️ Translation Layer<br/>Versions → URLs"]
@@ -71,8 +72,8 @@ graph LR
     style B fill:#2ecc71,color:#fff
     style C fill:#9b59b6,color:#fff
     style D fill:#e67e22,color:#fff
-
 ```
+
 
 | Layer | Role | Description |
 |---|---|---|
